@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="Buscar"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:id="@+id/menu_recognize_music"
+        android:title="Reconhecer Música"
+        android:icon="@drawable/ic_recognize"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_add_to_playlist"
+        android:title="Colocar numa playlist" />
+    <item
+        android:id="@+id/menu_view_playlists"
+        android:title="Ver playlists" />
+    <item
+        android:id="@+id/menu_view_all_music"
+        android:title="Ver todas as musicas" />
+
+</menu>
