@@ -27,7 +27,7 @@ public interface SoundDeckContract {
     interface Presenter {
         void bindView(View view);
         void unbindView();
-        void loadTrackQueue(List<AudioTrack> tracks); // Método para carregar a lista de músicas
+        void loadTrackQueue(List<AudioTrack> tracks); // Metodo para carregar a lista de músicas
         void togglePlayback();
         void skipToNextTrack();
         void returnToPreviousTrack();
