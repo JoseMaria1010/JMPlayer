@@ -208,6 +208,8 @@ public class SoundDeckPresenter implements SoundDeckContract.Presenter, ACRCloud
     public void syncUIToPlayerState() {
         if (mediaController == null || view == null) return;
 
+        view.animateArtwork(mediaController.isPlaying());
+
         view.setPlaybackButtonState(mediaController.isPlaying());
         view.updateShuffleButtonState(mediaController.getShuffleModeEnabled());
         view.updateRepeatButtonState(mediaController.getRepeatMode());
